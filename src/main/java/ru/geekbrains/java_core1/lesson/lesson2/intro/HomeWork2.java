@@ -9,7 +9,7 @@ public class HomeWork2 {
         isPositiveOrNegative(17);
         isNegative(12);
         printWordNTimes("Hello",5);
-
+        leapYear(2000);
     }
 
     public static boolean within10and20(int a, int b) {
@@ -22,7 +22,6 @@ public class HomeWork2 {
             return false;
         }
     }
-
 
     public static void isPositiveOrNegative(int a) {
         if (a >= 0) {
@@ -46,5 +45,15 @@ public class HomeWork2 {
 
         }
 
+    }
+
+    public static boolean leapYear(int year) {
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println("Год високосный");
+            return true;
+        } else {
+            System.out.println("Год не високосный");
+            return false;
+        }
     }
 }
